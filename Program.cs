@@ -16,9 +16,11 @@ namespace Head.Controller
             var value = MotorControl.InitializeDynamixelMotors();
             MotorsInitialized = MotorFunctions.DynamixelMotorsInitialized;
             if (MotorsInitialized)
+            {
                 MotorControl.CreateConnectMotorObjects();
+                Console.WriteLine("System ready.");
+            }
 
-            Console.WriteLine("Hello, World!");
             await Task.CompletedTask;
         }
     }
