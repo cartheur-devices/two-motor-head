@@ -8,4 +8,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\cartheur-animals-robot\Cartheur.Animals.Robot.csproj" />
+  </ItemGroup>
+
 </Project>
