@@ -13,6 +13,7 @@ namespace Head.Controller
         async static Task Main()
         {
             MotorControl = new MotorFunctions();
+            MotorFunctions.ActivePortSet = true;
             var value = MotorControl.InitializeDynamixelMotors();
             MotorsInitialized = MotorFunctions.DynamixelMotorsInitialized;
             if (MotorsInitialized)
