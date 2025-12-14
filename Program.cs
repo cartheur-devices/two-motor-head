@@ -20,7 +20,8 @@ namespace Head.Controller
                 MotorControl.CreateConnectMotorObjects();
                 Console.WriteLine("System ready.");
             }
-
+            else
+                Console.WriteLine("Motors not initialized.");
             await Task.CompletedTask;
         }
     }
